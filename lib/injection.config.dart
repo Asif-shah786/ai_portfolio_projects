@@ -8,7 +8,11 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
+import 'package:ai_portfolio_projects/features/employee_productivity/bloc/emplyee_productivity_bloc.dart'
+    as _i472;
 import 'package:ai_portfolio_projects/features/home/home_bloc.dart' as _i246;
+import 'package:ai_portfolio_projects/libraries/productivity_service.dart'
+    as _i992;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 
@@ -24,6 +28,9 @@ extension GetItInjectableX on _i174.GetIt {
       environmentFilter,
     );
     gh.factory<_i246.HomeBloc>(() => _i246.HomeBloc());
+    gh.factory<_i992.ProductivityService>(() => _i992.ProductivityService());
+    gh.factory<_i472.EmplyeeProductivityBloc>(
+        () => _i472.EmplyeeProductivityBloc(gh<_i992.ProductivityService>()));
     return this;
   }
 }

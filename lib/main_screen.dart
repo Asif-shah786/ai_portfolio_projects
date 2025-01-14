@@ -107,7 +107,7 @@ class _NonCompactLayoutState extends State<_NonCompactLayout> with AutomaticKeep
     super.build(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Title'),
+        title: const Text('Machine Learning Portfolio'),
       ),
       body: Row(
         children: [
@@ -124,12 +124,12 @@ class _NonCompactLayoutState extends State<_NonCompactLayout> with AutomaticKeep
               NavigationRailDestination(
                 icon: Icon(Icons.home_outlined),
                 selectedIcon: Icon(Icons.home),
-                label: Text('Tasks'),
+                label: Text('Home'),
               ),
               NavigationRailDestination(
                 icon: Icon(Icons.sticky_note_2_outlined),
                 selectedIcon: Icon(Icons.sticky_note_2),
-                label: Text('Goals'),
+                label: Text('Project-1'),
               ),
               NavigationRailDestination(
                 icon: Icon(Icons.photo_album_outlined),
